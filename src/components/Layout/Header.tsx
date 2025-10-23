@@ -72,7 +72,7 @@ const Navigation: React.FC = () => {
           ))}
 
           {/* Contact Us Button */}
-          <Link href="/contact" style={{ textDecoration: 'none' }}>
+          <Link href="/getin" style={{ textDecoration: 'none' }}>
             <button style={{
               backgroundColor: '#10b981',
               color: '#ffffff',
