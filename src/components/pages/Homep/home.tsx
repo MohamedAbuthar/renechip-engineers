@@ -108,7 +108,7 @@ const faqs = [
       </section>
 
       {/* About ReneChip Section */}
-      <section id="about" className="py-12 sm:py-20 bg-white">
+      <section id="about" className="py-12 sm:py-25 bg-white">
         <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 sm:mb-6 text-gray-900">About ReneChip</h2>
           <p className="text-center text-gray-600 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed text-sm sm:text-base">
@@ -172,7 +172,7 @@ const faqs = [
       </section>
 
       {/* Our Services Section */}
-      <section id="services" className="py-12 sm:py-20 bg-gray-50">
+      <section id="services" className="py-12 sm:py-25 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-gray-900">Our Services</h2>
           <p className="text-center text-gray-600 mb-8 sm:mb-12 text-sm sm:text-base">
@@ -352,7 +352,7 @@ const faqs = [
       </section>
 
       {/* How It Works Section */}
-      <section id="works" className="py-12 sm:py-20 bg-white">
+      <section id="works" className="py-12 sm:py-25 bg-white">
         <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-gray-900">How It Works</h2>
           <p className="text-center text-gray-600 mb-12 sm:mb-16 text-sm sm:text-base">
@@ -404,7 +404,7 @@ const faqs = [
       </section>
 
       {/* Industries We Serve Section */}
-      <section id="industries" className="py-12 sm:py-20 bg-gray-50">
+      <section id="industries" className="py-12 sm:py-25 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-gray-900">Industries We Serve</h2>
           <p className="text-center text-gray-600 mb-8 sm:mb-12 text-sm sm:text-base">
@@ -476,7 +476,7 @@ const faqs = [
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="py-12 sm:py-20 bg-white">
+      <section id="faq" className="py-12 sm:py-25 bg-white">
         <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 text-gray-900">Frequently Asked Questions</h2>
           <p className="text-center text-gray-600 mb-8 sm:mb-12 text-sm sm:text-base">
