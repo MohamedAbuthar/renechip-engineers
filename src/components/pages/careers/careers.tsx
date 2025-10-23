@@ -1,26 +1,14 @@
 import React from 'react';
 import { Briefcase, TrendingUp, DollarSign, Users, MapPin, Building, Wrench } from 'lucide-react';
+import Navigation from '@/components/Layout/Header';
 
 export default function TalentNetwork() {
   return (
+    <>
+    <Navigation/>
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-green-600 text-white">
-        <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold">ReneChip</div>
-          <div className="hidden md:flex space-x-6 text-sm">
-            <a href="#" className="hover:text-green-200">Blog</a>
-            <a href="#" className="hover:text-green-200">Case Studies</a>
-            <a href="#" className="hover:text-green-200">Careers</a>
-            <a href="#" className="hover:text-green-200 font-semibold">Contact Us</a>
-          </div>
-          <button className="md:hidden">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </nav>
-        
         {/* Hero Section */}
         <div className="container mx-auto px-4 py-16 md:py-24">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Join Our Talent Network</h1>
@@ -362,5 +350,6 @@ export default function TalentNetwork() {
         </div>
       </footer>
     </div>
+    </>
   );
 }

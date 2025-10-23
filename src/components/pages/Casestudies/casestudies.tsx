@@ -1,3 +1,4 @@
+import Navigation from '@/components/Layout/Header';
 import React from 'react';
 
 const SuccessStoriesPage = () => {
@@ -107,26 +108,11 @@ const SuccessStoriesPage = () => {
   ];
 
   return (
+    <>
+    <Navigation/>
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-green-600 text-white">
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex justify-between items-center">
-            <div className="text-xl font-bold">ReneChip</div>
-            <div className="hidden md:flex space-x-6 text-sm">
-              <a href="#" className="hover:underline">Blog</a>
-              <a href="#" className="hover:underline">Case Studies</a>
-              <a href="#" className="hover:underline">Careers</a>
-              <a href="#" className="bg-white text-green-600 px-4 py-2 rounded hover:bg-gray-100">Contact Us</a>
-            </div>
-            <button className="md:hidden">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-          </div>
-        </nav>
-        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">Success Stories</h1>
           <p className="text-base md:text-lg opacity-90">
@@ -275,6 +261,7 @@ const SuccessStoriesPage = () => {
         </div>
       </footer>
     </div>
+    </>
   );
 };
 

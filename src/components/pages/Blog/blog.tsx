@@ -1,6 +1,7 @@
 'use client';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Calendar, User, Clock, ArrowRight, Menu, X } from 'lucide-react';
+import Navigation from '@/components/Layout/Header';
 
 const IndustryInsightsPage = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -68,46 +69,10 @@ const IndustryInsightsPage = () => {
   };
 
   return (
+    <>
+    <Navigation/>
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
-      <nav className="bg-emerald-600 px-4 sm:px-6 lg:px-8 py-4">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="text-white text-xl sm:text-2xl font-bold">
-            ReneChip
-          </div>
-          
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-white hover:text-emerald-100 transition text-sm">Blog</a>
-            <a href="#" className="text-white hover:text-emerald-100 transition text-sm">Case Studies</a>
-            <a href="#" className="text-white hover:text-emerald-100 transition text-sm">Careers</a>
-            <button className="bg-white text-emerald-600 px-6 py-2 rounded font-medium hover:bg-emerald-50 transition text-sm">
-              Contact Us
-            </button>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button 
-            className="md:hidden text-white"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-
-        {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 space-y-3">
-            <a href="#" className="block text-white hover:text-emerald-100 transition text-sm">Blog</a>
-            <a href="#" className="block text-white hover:text-emerald-100 transition text-sm">Case Studies</a>
-            <a href="#" className="block text-white hover:text-emerald-100 transition text-sm">Careers</a>
-            <button className="w-full bg-white text-emerald-600 px-6 py-2 rounded font-medium hover:bg-emerald-50 transition text-sm">
-              Contact Us
-            </button>
-          </div>
-        )}
-      </nav>
-
+      
       {/* Hero Section */}
       <div className="bg-emerald-600 text-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <div className="max-w-7xl mx-auto">
@@ -250,6 +215,7 @@ const IndustryInsightsPage = () => {
         </div>
       </footer>
     </div>
+    </>
   );
 };
 

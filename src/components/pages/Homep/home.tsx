@@ -27,45 +27,59 @@ const ReneChipWebsite = () => {
     <Navigation/>
     <div className="min-h-screen bg-white">
       {/* Hero Section - Engineering Excellence */}
-      <section className="relative min-h-screen bg-gradient-to-br from-emerald-600 to-emerald-500 text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-64 h-64 border border-white/30 rounded transform -rotate-12"></div>
-          <div className="absolute top-40 right-20 w-96 h-96 border border-white/30 rounded transform rotate-12"></div>
-          <div className="absolute bottom-20 left-1/4 w-48 h-48 border border-white/30 rounded transform rotate-45"></div>
-          <div className="absolute top-1/3 right-1/3 text-9xl font-bold text-white/5">01</div>
-          <div className="absolute bottom-1/4 right-1/4 text-9xl font-bold text-white/5">02</div>
-        </div>
-        
-        <div className="relative z-10 container mx-auto px-6 py-32 max-w-6xl">
-          <div className="max-w-2xl">
-            <h1 className="text-6xl font-bold mb-6 leading-tight">
-              Engineering Excellence<br/>
-              <span className="text-white/80">Delivered</span>
-            </h1>
-            <p className="text-xl mb-8 text-white/90 leading-relaxed">
-              High-calibre technical talent and comprehensive project services for manufacturing companies. From staffing to full-spectrum engineering solutions.
-            </p>
-            <div className="flex gap-4">
-              <button className="bg-white text-emerald-600 px-6 py-3 rounded font-semibold hover:bg-emerald-50 transition flex items-center gap-2">
-                Explore Services
-                <ChevronDown className="w-4 h-4" />
-              </button>
-              <button className="bg-emerald-700 text-white px-6 py-3 rounded font-semibold hover:bg-emerald-800 transition">
-                Contact Us
-              </button>
-            </div>
-          </div>
-        </div>
+      <section className="relative min-h-screen text-white overflow-hidden">
+  {/* Background Image with Overlay */}
+  <div className="absolute inset-0">
+    <img 
+      src="/ho.jpg"
+      alt="Manufacturing facility"
+      className="w-full h-full object-cover"
+    />
+    {/* Green overlay to match the emerald theme */}
+    <div className="absolute inset-0 bg-gradient-to-br from-emerald-600/90 to-emerald-500/85"></div>
+  </div>
+  
+  {/* Decorative Elements */}
+  <div className="absolute inset-0 opacity-10">
+    <div className="absolute top-20 left-10 w-64 h-64 border border-white/30 rounded transform -rotate-12"></div>
+    <div className="absolute top-40 right-20 w-96 h-96 border border-white/30 rounded transform rotate-12"></div>
+    <div className="absolute bottom-20 left-1/4 w-48 h-48 border border-white/30 rounded transform rotate-45"></div>
+    <div className="absolute top-1/3 right-1/3 text-9xl font-bold text-white/5">01</div>
+    <div className="absolute bottom-1/4 right-1/4 text-9xl font-bold text-white/5">02</div>
+  </div>
+  
+  {/* Content */}
+  <div className="relative z-10 container mx-auto px-6 py-32 max-w-6xl">
+    <div className="max-w-2xl">
+      <h1 className="text-6xl font-bold mb-6 leading-tight">
+        Engineering Excellence<br/>
+        <span className="text-white/80">Delivered</span>
+      </h1>
+      <p className="text-xl mb-8 text-white/90 leading-relaxed">
+        High-calibre technical talent and comprehensive project services for manufacturing companies. From staffing to full-spectrum engineering solutions.
+      </p>
+      <div className="flex gap-4">
+        <button className="bg-white text-emerald-600 px-6 py-3 rounded font-semibold hover:bg-emerald-50 transition flex items-center gap-2">
+          Explore Services
+          <ChevronDown className="w-4 h-4" />
+        </button>
+        <button className="bg-emerald-700 text-white px-6 py-3 rounded font-semibold hover:bg-emerald-800 transition">
+          Contact Us
+        </button>
+      </div>
+    </div>
+  </div>
 
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <div className="w-8 h-12 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
-            <div className="w-1.5 h-3 bg-white/50 rounded-full animate-bounce"></div>
-          </div>
-        </div>
-      </section>
+  {/* Scroll Indicator */}
+  <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+    <div className="w-8 h-12 border-2 border-white/50 rounded-full flex items-start justify-center p-2">
+      <div className="w-1.5 h-3 bg-white/50 rounded-full animate-bounce"></div>
+    </div>
+  </div>
+</section>
 
       {/* About ReneChip Section */}
-      <section className="py-20 bg-white">
+      <section id="about" className="py-20 bg-white">
         <div className="container mx-auto px-6 max-w-6xl">
           <h2 className="text-4xl font-bold text-center mb-6 text-gray-900">About ReneChip</h2>
           <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
@@ -129,7 +143,7 @@ const ReneChipWebsite = () => {
       </section>
 
       {/* Our Services Section */}
-      <section className="py-20 bg-gray-50">
+      <section id="services" className="py-20 bg-gray-50">
         <div className="container mx-auto px-6 max-w-6xl">
           <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">Our Services</h2>
           <p className="text-center text-gray-600 mb-12">
@@ -309,7 +323,7 @@ const ReneChipWebsite = () => {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-20 bg-white">
+      <section id="works" className="py-20 bg-white">
         <div className="container mx-auto px-6 max-w-6xl">
           <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">How It Works</h2>
           <p className="text-center text-gray-600 mb-16">
@@ -364,7 +378,7 @@ const ReneChipWebsite = () => {
       </section>
 
       {/* Industries We Serve Section */}
-      <section className="py-20 bg-gray-50">
+      <section id="industries" className="py-20 bg-gray-50">
         <div className="container mx-auto px-6 max-w-6xl">
           <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">Industries We Serve</h2>
           <p className="text-center text-gray-600 mb-12">
@@ -436,7 +450,7 @@ const ReneChipWebsite = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
+      <section id="faq" className="py-20 bg-white">
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">Frequently Asked Questions</h2>
           <p className="text-center text-gray-600 mb-12">
