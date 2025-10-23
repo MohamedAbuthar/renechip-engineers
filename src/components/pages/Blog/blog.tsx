@@ -3,8 +3,11 @@ import { useState } from 'react';
 import { Calendar, User, Clock, ArrowRight, Menu, X } from 'lucide-react';
 import Nav from '@/components/Layout/Header1';
 import Footer from '@/components/Layout/Footer';
+import { useRouter } from 'next/navigation';
 
 const IndustryInsightsPage = () => {
+const router = useRouter();
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [visibleArticles, setVisibleArticles] = useState(6);
 
@@ -151,7 +154,8 @@ const IndustryInsightsPage = () => {
           <p className="text-base sm:text-lg mb-8 text-emerald-50">
             Get in touch to discuss your technical staffing and project delivery needs
           </p>
-          <button className="bg-white text-emerald-600 px-8 py-3 rounded font-medium hover:bg-emerald-50 transition">
+          <button className="bg-white text-emerald-600 px-8 py-3 rounded font-medium hover:bg-emerald-50 transition"
+          onClick={() => router.push('/getin')}>
             Contact Us
           </button>
         </div>

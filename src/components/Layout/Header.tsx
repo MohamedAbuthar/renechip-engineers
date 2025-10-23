@@ -33,7 +33,7 @@ const Navigation: React.FC = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-white shadow-md'
-          : 'bg-gradient-to-br from-emerald-600/90 to-emerald-500/85'
+          : 'bg-transparent backdrop-blur-sm-1'
       }`}
     >
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10 py-4 flex items-center justify-between">
@@ -98,7 +98,7 @@ const Navigation: React.FC = () => {
           className={`lg:hidden flex flex-col items-center shadow-lg py-4 space-y-4 border-t ${
             scrolled
               ? 'bg-white border-gray-200'
-              : 'bg-green-700 border-green-600'
+              : 'bg-emerald-700/95 backdrop-blur-md border-emerald-600'
           }`}
         >
           {navLinks.map((link) => (
