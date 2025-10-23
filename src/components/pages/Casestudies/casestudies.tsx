@@ -1,5 +1,6 @@
-import Navigation from '@/components/Layout/Header';
-import React from 'react';
+'use client';
+import Nav from '@/components/Layout/Header1';
+
 
 const SuccessStoriesPage = () => {
   const successStories = [
@@ -109,7 +110,7 @@ const SuccessStoriesPage = () => {
 
   return (
     <>
-    <Navigation/>
+    <Nav/>
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-green-600 text-white">

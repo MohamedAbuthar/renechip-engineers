@@ -1,11 +1,12 @@
-import React from 'react';
+'use client';
 import { Briefcase, TrendingUp, DollarSign, Users, MapPin, Building, Wrench } from 'lucide-react';
-import Navigation from '@/components/Layout/Header';
+
+import Nav from '@/components/Layout/Header1';
 
 export default function TalentNetwork() {
   return (
     <>
-    <Navigation/>
+    <Nav/>
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-green-600 text-white">
