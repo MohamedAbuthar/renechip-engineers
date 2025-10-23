@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { Calendar, User, Clock, ArrowRight, Menu, X } from 'lucide-react';
 import Nav from '@/components/Layout/Header1';
+import Footer from '@/components/Layout/Footer';
 
 const IndustryInsightsPage = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -156,65 +157,9 @@ const IndustryInsightsPage = () => {
         </div>
       </div>
 
-      {/* Footer */}
-      <footer className="bg-emerald-600 text-white px-4 sm:px-6 lg:px-8 py-12 border-t border-emerald-500">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            {/* Company Info */}
-            <div>
-              <h3 className="text-xl font-bold mb-4">ReneChip</h3>
-              <p className="text-emerald-100 text-sm">
-                Engineering excellence and workforce solutions for manufacturing companies.
-              </p>
-            </div>
-
-            {/* Quick Links */}
-            <div>
-              <h4 className="font-semibold mb-4 text-sm">Quick Links</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="#" className="text-emerald-100 hover:text-white transition">Home</a></li>
-                <li><a href="#" className="text-emerald-100 hover:text-white transition">About Us</a></li>
-                <li><a href="#" className="text-emerald-100 hover:text-white transition">Services</a></li>
-                <li><a href="#" className="text-emerald-100 hover:text-white transition">Careers</a></li>
-              </ul>
-            </div>
-
-            {/* Resources */}
-            <div>
-              <h4 className="font-semibold mb-4 text-sm">Resources</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="#" className="text-emerald-100 hover:text-white transition">Case Studies</a></li>
-                <li><a href="#" className="text-emerald-100 hover:text-white transition">Blog</a></li>
-                <li><a href="#" className="text-emerald-100 hover:text-white transition">Contact</a></li>
-              </ul>
-            </div>
-
-            {/* Connect */}
-            <div>
-              <h4 className="font-semibold mb-4 text-sm">Connect</h4>
-              <div className="space-y-3">
-                <a href="mailto:info@renechip.com" className="flex items-center gap-2 text-emerald-100 hover:text-white transition text-sm">
-                  <span>✉</span>
-                  <span>info@renechip.com</span>
-                </a>
-                <a href="#" className="inline-flex items-center justify-center w-8 h-8 bg-emerald-500 rounded hover:bg-emerald-400 transition">
-                  in
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Copyright */}
-          <div className="border-t border-emerald-500 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
-            <p className="text-emerald-100">© 2025 ReneChip. All rights reserved.</p>
-            <div className="flex gap-6">
-              <a href="#" className="text-emerald-100 hover:text-white transition">Privacy Policy</a>
-              <a href="#" className="text-emerald-100 hover:text-white transition">Terms of Service</a>
-            </div>
-          </div>
-        </div>
-      </footer>
+  
     </div>
+    <Footer/>
     </>
   );
 };
