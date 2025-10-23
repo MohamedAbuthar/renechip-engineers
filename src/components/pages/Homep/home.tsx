@@ -1,8 +1,9 @@
 'use client';
 import React, { useState } from 'react';
-import { ChevronDown, Factory, Users, Wrench, Lightbulb, Rocket, Target, Shield, UserCheck, Handshake, MessageSquare, Search, CheckCircle, TrendingUp } from 'lucide-react';
+import { ChevronDown, Factory, Users, Wrench, Lightbulb, Rocket, Target, Shield, UserCheck, Handshake, MessageSquare, Search, CheckCircle, TrendingUp, LucideBriefcase,Cpu,Network,Scale,Award,Boxes,UsersRound, Layers, Box, Zap, Car, Cog, Printer, Building2 } from 'lucide-react';
 import Navigation from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
+import Link from 'next/link';
 
 const ReneChipWebsite = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -11,16 +12,40 @@ const ReneChipWebsite = () => {
     setOpenFaq(openFaq === index ? null : index);
   };
 
-  const faqs = [
-    "What makes ReneChip different from traditional staffing agencies?",
-    "Can you handle both small-scale staffing and large projects?",
-    "How quickly can you deploy technical personnel?",
-    "Do you offer contract-to-hire arrangements?",
-    "What industries do you specialize in?",
-    "Can you handle both engineering services and staffing simultaneously?",
-    "What is your screening process for technical candidates?",
-    "Do you provide ongoing support after placement?"
-  ];
+const faqs = [
+  {
+    question: "What makes ReneChip different from traditional staffing agencies?",
+    answer: "Unlike general staffing firms, we specialize in manufacturing and engineering talent with deep domain expertise. We also offer fixed-bid engineering services like BIM modelling and CAD support, providing both personnel and project delivery in one partnership."
+  },
+  {
+    question: "Can you handle both small-scale staffing and large projects?",
+    answer: "Absolutely. We scale from single specialized engineers to teams of 200+ personnel. Our hybrid model allows us to combine staffing with project services, whether it's a few CAD specialists or a complete facility upgrade with engineering support."
+  },
+  {
+    question: "How quickly can you deploy technical personnel?",
+    answer: "For engineering roles, our typical deployment timeline is 2-4 weeks depending on specialization. For operational staff, we can often mobilize teams within 1-2 weeks. Emergency staffing solutions are available for critical production needs."
+  },
+  {
+    question: "Do you offer contract-to-hire arrangements?",
+    answer: "Yes, we provide flexible engagement models including contract, contract-to-hire, direct placement, and project-based services. This allows you to evaluate talent before making permanent hiring decisio"
+  },
+  {
+    question: "What industries do you specialize in?",
+    answer: "We focus on automotive, heavy equipment, electronics manufacturing, plastics/moulding, metal fabrication, and general industrial production. Our technical team has hands-on experience in these sectors."
+  },
+  {
+    question: "Can you handle both engineering services and staffing simultaneously?",
+      answer: "Yes, this is one of our core strengths. For example, we can deliver a BIM modelling project while simultaneously providing the process engineers and technicians needed for implementation. This integrated approach ensures seamless execution."
+  },
+  {
+    question: "What is your screening process for technical candidates?",
+    answer: "All candidates undergo technical skills assessment, credential verification, domain expertise evaluation, and manufacturing safety certification review. For engineering roles, we conduct technical interviews and portfolio reviews."
+  },
+  {
+    question: "Do you provide ongoing support after placement?",
+    answer: "Yes, we offer continued support including performance monitoring, replacement guarantees, additional training coordination, and regular check-ins to ensure successful long-term engagements."
+  }
+];
 
   return (
     <>
@@ -59,13 +84,17 @@ const ReneChipWebsite = () => {
         High-calibre technical talent and comprehensive project services for manufacturing companies. From staffing to full-spectrum engineering solutions.
       </p>
       <div className="flex gap-4">
+        <Link href="#services">
         <button className="bg-white text-emerald-600 px-6 py-3 rounded font-semibold hover:bg-emerald-50 transition flex items-center gap-2">
           Explore Services
           <ChevronDown className="w-4 h-4" />
         </button>
+        </Link>
+        <Link href="/getin">
         <button className="bg-emerald-700 text-white px-6 py-3 rounded font-semibold hover:bg-emerald-800 transition">
           Contact Us
         </button>
+        </Link>
       </div>
     </div>
   </div>
@@ -89,7 +118,7 @@ const ReneChipWebsite = () => {
           <div className="grid md:grid-cols-3 gap-6 mb-16">
             <div className="border border-gray-200 rounded-lg p-8 hover:shadow-lg transition">
               <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                <Factory className="w-6 h-6 text-emerald-600" />
+                <Building2 className="w-6 h-6 text-emerald-600" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Manufacturing Focus</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -99,7 +128,7 @@ const ReneChipWebsite = () => {
 
             <div className="border border-gray-200 rounded-lg p-8 hover:shadow-lg transition">
               <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                <Users className="w-6 h-6 text-emerald-600" />
+                <UsersRound className="w-6 h-6 text-emerald-600" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Technical Excellence</h3>
               <p className="text-gray-600 leading-relaxed">
@@ -153,7 +182,7 @@ const ReneChipWebsite = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-lg p-8 border border-gray-200 hover:shadow-lg transition">
               <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                <Factory className="w-6 h-6 text-emerald-600" />
+                <LucideBriefcase className="w-6 h-6 text-emerald-600" />
               </div>
               <h3 className="text-2xl font-bold mb-2 text-gray-900">Technical & Engineering Staffing</h3>
               <p className="text-emerald-600 font-semibold mb-4">Our Core Differentiator</p>
@@ -179,7 +208,7 @@ const ReneChipWebsite = () => {
 
             <div className="bg-white rounded-lg p-8 border border-gray-200 hover:shadow-lg transition">
               <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                <Target className="w-6 h-6 text-emerald-600" />
+                <Cpu className="w-6 h-6 text-emerald-600" />
               </div>
               <h3 className="text-2xl font-bold mb-2 text-gray-900">Fixed-Bid Engineering Projects</h3>
               <p className="text-emerald-600 font-semibold mb-4">As-a-Service Solutions</p>
@@ -205,7 +234,7 @@ const ReneChipWebsite = () => {
 
             <div className="bg-white rounded-lg p-8 border border-gray-200 hover:shadow-lg transition">
               <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                <UserCheck className="w-6 h-6 text-emerald-600" />
+                <UsersRound className="w-6 h-6 text-emerald-600" />
               </div>
               <h3 className="text-2xl font-bold mb-2 text-gray-900">Blue-Collar Staffing</h3>
               <p className="text-emerald-600 font-semibold mb-4">Operational Support</p>
@@ -231,7 +260,7 @@ const ReneChipWebsite = () => {
 
             <div className="bg-white rounded-lg p-8 border border-gray-200 hover:shadow-lg transition">
               <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                <Lightbulb className="w-6 h-6 text-emerald-600" />
+                <Layers className="w-6 h-6 text-emerald-600" />
               </div>
               <h3 className="text-2xl font-bold mb-2 text-gray-900">Hybrid Solutions</h3>
               <p className="text-emerald-600 font-semibold mb-4">Manpower + Service Combined</p>
@@ -269,7 +298,7 @@ const ReneChipWebsite = () => {
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div className="bg-emerald-700 rounded-lg p-8 hover:bg-emerald-800 transition">
               <div className="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center mb-4">
-                <Lightbulb className="w-6 h-6 text-white" />
+                <Target className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-bold mb-3">Engineering-First Mindset</h3>
               <p className="text-white/90 text-sm leading-relaxed">
@@ -279,7 +308,7 @@ const ReneChipWebsite = () => {
 
             <div className="bg-emerald-700 rounded-lg p-8 hover:bg-emerald-800 transition">
               <div className="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center mb-4">
-                <Target className="w-6 h-6 text-white" />
+                <Boxes className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-bold mb-3">Project-Delivery Capability</h3>
               <p className="text-white/90 text-sm leading-relaxed">
@@ -289,7 +318,7 @@ const ReneChipWebsite = () => {
 
             <div className="bg-emerald-700 rounded-lg p-8 hover:bg-emerald-800 transition">
               <div className="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center mb-4">
-                <TrendingUp className="w-6 h-6 text-white" />
+                <Scale className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-bold mb-3">Flexible Staffing Scale</h3>
               <p className="text-white/90 text-sm leading-relaxed">
@@ -301,7 +330,7 @@ const ReneChipWebsite = () => {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-emerald-700 rounded-lg p-8 hover:bg-emerald-800 transition">
               <div className="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center mb-4">
-                <Shield className="w-6 h-6 text-white" />
+                <Award className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-bold mb-3">Quality & Fit</h3>
               <p className="text-white/90 text-sm leading-relaxed">
@@ -342,7 +371,6 @@ const ReneChipWebsite = () => {
             </div>
 
             <div className="text-center relative">
-              <div className="hidden md:block absolute top-10 right-full w-full h-0.5 bg-emerald-200"></div>
               <div className="w-20 h-20 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Search className="w-10 h-10 text-white" />
               </div>
@@ -353,7 +381,6 @@ const ReneChipWebsite = () => {
             </div>
 
             <div className="text-center relative">
-              <div className="hidden md:block absolute top-10 right-full w-full h-0.5 bg-emerald-200"></div>
               <div className="w-20 h-20 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="w-10 h-10 text-white" />
               </div>
@@ -364,7 +391,6 @@ const ReneChipWebsite = () => {
             </div>
 
             <div className="text-center relative">
-              <div className="hidden md:block absolute top-10 right-full w-full h-0.5 bg-emerald-200"></div>
               <div className="w-20 h-20 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Rocket className="w-10 h-10 text-white" />
               </div>
@@ -388,7 +414,7 @@ const ReneChipWebsite = () => {
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white rounded-lg p-8 border border-gray-200 hover:shadow-lg transition">
               <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                <Factory className="w-6 h-6 text-emerald-600" />
+                <Car className="w-6 h-6 text-emerald-600" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Automotive & Components</h3>
               <p className="text-gray-600 text-sm">
@@ -398,7 +424,7 @@ const ReneChipWebsite = () => {
 
             <div className="bg-white rounded-lg p-8 border border-gray-200 hover:shadow-lg transition">
               <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                <Target className="w-6 h-6 text-emerald-600" />
+                <Cog className="w-6 h-6 text-emerald-600" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Heavy Equipment</h3>
               <p className="text-gray-600 text-sm">
@@ -408,7 +434,7 @@ const ReneChipWebsite = () => {
 
             <div className="bg-white rounded-lg p-8 border border-gray-200 hover:shadow-lg transition">
               <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                <Lightbulb className="w-6 h-6 text-emerald-600" />
+                <Zap className="w-6 h-6 text-emerald-600" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Electronics Manufacturing</h3>
               <p className="text-gray-600 text-sm">
@@ -418,7 +444,7 @@ const ReneChipWebsite = () => {
 
             <div className="bg-white rounded-lg p-8 border border-gray-200 hover:shadow-lg transition">
               <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                <Shield className="w-6 h-6 text-emerald-600" />
+                <Factory className="w-6 h-6 text-emerald-600" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Plastics & Moulding</h3>
               <p className="text-gray-600 text-sm">
@@ -438,7 +464,7 @@ const ReneChipWebsite = () => {
 
             <div className="bg-white rounded-lg p-8 border border-gray-200 hover:shadow-lg transition">
               <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
-                <TrendingUp className="w-6 h-6 text-emerald-600" />
+                <Box className="w-6 h-6 text-emerald-600" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-gray-900">Facility Upgrades</h3>
               <p className="text-gray-600 text-sm">
@@ -449,40 +475,40 @@ const ReneChipWebsite = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section id="faq" className="py-20 bg-white">
-        <div className="container mx-auto px-6 max-w-4xl">
-          <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">Frequently Asked Questions</h2>
-          <p className="text-center text-gray-600 mb-12">
-            Common questions about our technical staffing and project services
-          </p>
+ {/* FAQ Section */}
+<section id="faq" className="py-20 bg-white">
+  <div className="container mx-auto px-6 max-w-4xl">
+    <h2 className="text-4xl font-bold text-center mb-4 text-gray-900">Frequently Asked Questions</h2>
+    <p className="text-center text-gray-600 mb-12">
+      Common questions about our technical staffing and project services
+    </p>
 
-          <div className="space-y-4">
-            {faqs.map((faq, index) => (
-              <div key={index} className="border border-gray-200 rounded-lg overflow-hidden">
-                <button
-                  onClick={() => toggleFaq(index)}
-                  className="w-full px-6 py-4 flex items-center justify-between bg-white hover:bg-gray-50 transition text-left"
-                >
-                  <span className="font-semibold text-gray-900">{faq}</span>
-                  <ChevronDown
-                    className={`w-5 h-5 text-gray-500 transition-transform ${
-                      openFaq === index ? 'transform rotate-180' : ''
-                    }`}
-                  />
-                </button>
-                {openFaq === index && (
-                  <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      This is placeholder content for the FAQ answer. Replace with actual content for each question.
-                    </p>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
+    <div className="space-y-4">
+      {faqs.map((faq, index) => (
+        <div key={index} className="border border-gray-200 rounded-lg overflow-hidden">
+          <button
+            onClick={() => toggleFaq(index)}
+            className="w-full px-6 py-4 flex items-center justify-between bg-white hover:bg-gray-50 transition text-left"
+          >
+            <span className="font-semibold text-gray-900">{faq.question}</span>
+            <ChevronDown
+              className={`w-5 h-5 text-gray-500 transition-transform ${
+                openFaq === index ? 'transform rotate-180' : ''
+              }`}
+            />
+          </button>
+          {openFaq === index && (
+            <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {faq.answer}
+              </p>
+            </div>
+          )}
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
     </div>
     <Footer/>
     </>
