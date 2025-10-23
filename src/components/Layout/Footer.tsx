@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
               margin: '0'
             }}>
               <li style={{ marginBottom: '14px' }}>
-                <a href="/about" style={{
+                <a href="#about" style={{
                   textDecoration: 'none',
                   color: '#ffffff',
                   fontSize: '16px',
@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li style={{ marginBottom: '14px' }}>
-                <a href="/services" style={{
+                <a href="#services" style={{
                   textDecoration: 'none',
                   color: '#ffffff',
                   fontSize: '16px',
@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li style={{ marginBottom: '14px' }}>
-                <a href="/industries" style={{
+                <a href="#industries" style={{
                   textDecoration: 'none',
                   color: '#ffffff',
                   fontSize: '16px',
@@ -101,7 +101,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li style={{ marginBottom: '14px' }}>
-                <a href="/careers" style={{
+                <a href="/Careers" style={{
                   textDecoration: 'none',
                   color: '#ffffff',
                   fontSize: '16px',
@@ -134,7 +134,7 @@ const Footer: React.FC = () => {
               margin: '0'
             }}>
               <li style={{ marginBottom: '14px' }}>
-                <a href="/case-studies" style={{
+                <a href="/Casestudies" style={{
                   textDecoration: 'none',
                   color: '#ffffff',
                   fontSize: '16px',
@@ -160,7 +160,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li style={{ marginBottom: '14px' }}>
-                <a href="/how-it-works" style={{
+                <a href="#works" style={{
                   textDecoration: 'none',
                   color: '#ffffff',
                   fontSize: '16px',
@@ -173,7 +173,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li style={{ marginBottom: '14px' }}>
-                <a href="/faq" style={{
+                <a href="#faq" style={{
                   textDecoration: 'none',
                   color: '#ffffff',
                   fontSize: '16px',
@@ -186,7 +186,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li style={{ marginBottom: '14px' }}>
-                <a href="/contact" style={{
+                <a href="/getin" style={{
                   textDecoration: 'none',
                   color: '#ffffff',
                   fontSize: '16px',
