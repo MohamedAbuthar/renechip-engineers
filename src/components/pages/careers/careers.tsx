@@ -12,7 +12,7 @@ export default function TalentNetwork() {
       {/* Header */}
       <header className="bg-gradient-to-r from-green-700 to-green-600 text-white">
         {/* Hero Section */}
-        <div className="container mx-auto px-4 py-16 md:py-24">
+        <div className="container mx-auto px-4 py-20 md:py-24">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Join Our Talent Network</h1>
           <p className="text-lg md:text-xl text-green-100 max-w-2xl">
             Engineers, specialists, and manufacturing professionals – grow your career with high-impact opportunities

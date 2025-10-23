@@ -116,7 +116,7 @@ const SuccessStoriesPage = () => {
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-green-600 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-20">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">Success Stories</h1>
           <p className="text-base md:text-lg opacity-90">
             Real results from our engineering staffing and project delivery partnerships
