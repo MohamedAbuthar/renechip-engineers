@@ -1,9 +1,29 @@
+'use client';
+
 import React from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const Navigation: React.FC = () => {
+  const pathname = usePathname();
+
+  const navLinks = [
+    { href: '#about', label: 'About',id: 'about' },
+    { href: '#services', label: 'Services',id: 'services' },
+    { href: '#works', label: 'How It Works',id: 'works' },
+    { href: '#industries', label: 'Industries',id: 'industries' },
+    { href: '#faq', label: 'FAQ',id: 'faq' },
+    { href: '/blog', label: 'Blog' },
+    { href: '/Casestudies', label: 'Case Studies' },
+    { href: '/Careers', label: 'Careers' },
+  ];
+
   return (
     <nav style={{
-      backgroundColor: '#e8e6dd',
+      position: 'sticky',
+      top: 0,
+      zIndex: 1000,
+      backgroundColor: 'white',
       padding: '20px 40px',
       borderBottom: '1px solid #d0cec5'
     }}>
@@ -15,7 +35,7 @@ const Navigation: React.FC = () => {
         justifyContent: 'space-between'
       }}>
         {/* Logo */}
-        <a href="/" style={{ textDecoration: 'none' }}>
+        <Link href="/" style={{ textDecoration: 'none' }}>
           <div style={{
             fontSize: '32px',
             fontWeight: '700',
@@ -25,7 +45,7 @@ const Navigation: React.FC = () => {
           }}>
             ReneChip
           </div>
-        </a>
+        </Link>
 
         {/* Navigation Links */}
         <div style={{
@@ -33,98 +53,26 @@ const Navigation: React.FC = () => {
           alignItems: 'center',
           gap: '40px'
         }}>
-          <a href="/about" style={{
-            textDecoration: 'none',
-            color: '#1f2937',
-            fontSize: '16px',
-            fontWeight: '500',
-            fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-            transition: 'color 0.2s'
-          }}>
-            About
-          </a>
-          
-          <a href="/services" style={{
-            textDecoration: 'none',
-            color: '#1f2937',
-            fontSize: '16px',
-            fontWeight: '500',
-            fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-            transition: 'color 0.2s'
-          }}>
-            Services
-          </a>
-          
-          <a href="/how-it-works" style={{
-            textDecoration: 'none',
-            color: '#1f2937',
-            fontSize: '16px',
-            fontWeight: '500',
-            fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-            transition: 'color 0.2s',
-            whiteSpace: 'nowrap'
-          }}>
-            How It Works
-          </a>
-          
-          <a href="/industries" style={{
-            textDecoration: 'none',
-            color: '#1f2937',
-            fontSize: '16px',
-            fontWeight: '500',
-            fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-            transition: 'color 0.2s'
-          }}>
-            Industries
-          </a>
-          
-          <a href="/faq" style={{
-            textDecoration: 'none',
-            color: '#1f2937',
-            fontSize: '16px',
-            fontWeight: '500',
-            fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-            transition: 'color 0.2s'
-          }}>
-            FAQ
-          </a>
-          
-          <a href="/blog" style={{
-            textDecoration: 'none',
-            color: '#1f2937',
-            fontSize: '16px',
-            fontWeight: '500',
-            fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-            transition: 'color 0.2s'
-          }}>
-            Blog
-          </a>
-          
-          <a href="/case-studies" style={{
-            textDecoration: 'none',
-            color: '#1f2937',
-            fontSize: '16px',
-            fontWeight: '500',
-            fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-            transition: 'color 0.2s',
-            whiteSpace: 'nowrap'
-          }}>
-            Case Studies
-          </a>
-          
-          <a href="/careers" style={{
-            textDecoration: 'none',
-            color: '#1f2937',
-            fontSize: '16px',
-            fontWeight: '500',
-            fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-            transition: 'color 0.2s'
-          }}>
-            Careers
-          </a>
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              style={{
+                textDecoration: 'none',
+                color: pathname === link.href ? '#10b981' : '#1f2937',
+                fontSize: '16px',
+                fontWeight: pathname === link.href ? '600' : '500',
+                fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                transition: 'color 0.2s',
+                whiteSpace: 'nowrap'
+              }}
+            >
+              {link.label}
+            </Link>
+          ))}
 
           {/* Contact Us Button */}
-          <a href="/contact" style={{ textDecoration: 'none' }}>
+          <Link href="/contact" style={{ textDecoration: 'none' }}>
             <button style={{
               backgroundColor: '#10b981',
               color: '#ffffff',
@@ -143,7 +91,7 @@ const Navigation: React.FC = () => {
             >
               Contact Us
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
