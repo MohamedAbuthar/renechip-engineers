@@ -186,7 +186,7 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li style={{ marginBottom: '14px' }}>
-                <a href="/ontact" style={{
+                <a href="/getin" style={{
                   textDecoration: 'none',
                   color: '#ffffff',
                   fontSize: '16px',
