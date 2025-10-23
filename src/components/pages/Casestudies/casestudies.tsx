@@ -3,8 +3,11 @@ import Nav from '@/components/Layout/Header1';
 
 import Footer from '@/components/Layout/Footer';
 import React from 'react';
+import { useRouter } from 'next/navigation';
 
 const SuccessStoriesPage = () => {
+  const router = useRouter();
+
   const successStories = [
     {
       tags: ['Engineering Staffing', 'BIM Modeling', 'Automotive'],
@@ -195,7 +198,8 @@ const SuccessStoriesPage = () => {
           <p className="text-base md:text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
             Let's discuss how we can deliver similar results for your manufacturing operations
           </p>
-          <button className="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition-colors font-medium">
+          <button className="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition-colors font-medium"
+          onClick={() => router.push('/getin')}>
             Get Started
           </button>
         </div>

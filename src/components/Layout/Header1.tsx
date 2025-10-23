@@ -28,7 +28,7 @@ const Nav: React.FC = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled 
         ? 'bg-white shadow-md' 
-        : 'bg-gradient-to-r from-green-700 to-green-600 '
+        : 'bg-transparent backdrop-blur-sm-1'
     }`}>
       <div className="max-w-[1400px] mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}

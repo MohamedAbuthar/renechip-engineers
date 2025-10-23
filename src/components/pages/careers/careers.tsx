@@ -3,8 +3,11 @@ import Nav from '@/components/Layout/Header1';
 import React from 'react';
 import { Briefcase, TrendingUp, DollarSign, Users, MapPin, Building, Wrench, GraduationCap, TrendingDown, TrendingUpDown } from 'lucide-react';
 import Footer from '@/components/Layout/Footer';
+import { useRouter } from 'next/navigation';
 
 export default function TalentNetwork() {
+  const router = useRouter();
+
   return (
     <>
     <Nav/>
@@ -289,7 +292,8 @@ export default function TalentNetwork() {
         {/* General Application */}
         <div className="text-center mt-12">
           <p className="text-gray-600 mb-4">Don't see the right fit?</p>
-          <button className="px-8 py-3 border-2 border-gray-300 text-gray-700 rounded-lg font-semibold hover:border-green-600 hover:text-green-600 transition-colors">
+          <button className="px-8 py-3 border-2 border-gray-300 text-gray-700 rounded-lg font-semibold hover:border-green-600 hover:text-green-600 transition-colors"
+          onClick={() => router.push('/getin')}>
             Submit General Application
           </button>
         </div>
