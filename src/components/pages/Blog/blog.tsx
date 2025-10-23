@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { Calendar, User, Clock, ArrowRight, Menu, X } from 'lucide-react';
-import Navigation from '@/components/Layout/Header';
+import Nav from '@/components/Layout/Header1';
 import Footer from '@/components/Layout/Footer';
 
 const IndustryInsightsPage = () => {
@@ -71,11 +71,11 @@ const IndustryInsightsPage = () => {
 
   return (
     <>
-    <Navigation/>
+    <Nav/>
     <div className="min-h-screen bg-white">
       
       {/* Hero Section */}
-      <div className="bg-emerald-600 text-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+      <div className="bg-gradient-to-r from-green-700 to-green-600 text-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 pt-32">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
             Industry Insights &<br />Resources

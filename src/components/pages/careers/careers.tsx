@@ -1,12 +1,13 @@
+'use client';
+import Nav from '@/components/Layout/Header1';
 import React from 'react';
 import { Briefcase, TrendingUp, DollarSign, Users, MapPin, Building, Wrench, GraduationCap, TrendingDown, TrendingUpDown } from 'lucide-react';
-import Navigation from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
 
 export default function TalentNetwork() {
   return (
     <>
-    <Navigation/>
+    <Nav/>
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-gradient-to-r from-green-700 to-green-600 text-white">

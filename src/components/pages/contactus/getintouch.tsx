@@ -5,8 +5,8 @@
 
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
-import Navigation from '@/components/Layout/Header';
 import Footer from '@/components/Layout/Footer';
+import Nav from '@/components/Layout/Header1';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -33,7 +33,7 @@ export default function ContactPage() {
 
   return (
     <>
-    <Navigation/>
+    <Nav/>
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-green-800 to-green-400 text-white px-6 py-16 md:py-20 lg:py-24">

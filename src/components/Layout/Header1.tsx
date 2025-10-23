@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 
-const Navigation: React.FC = () => {
+const Nav: React.FC = () => {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -18,11 +18,7 @@ const Navigation: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { href: '#about', label: 'About' },
-    { href: '#services', label: 'Services' },
-    { href: '#works', label: 'How It Works' },
-    { href: '#industries', label: 'Industries' },
-    { href: '#faq', label: 'FAQ' },
+    { href: '/Home', label: 'Home' },
     { href: '/blog', label: 'Blog' },
     { href: '/Casestudies', label: 'Case Studies' },
     { href: '/Careers', label: 'Careers' },
@@ -32,7 +28,7 @@ const Navigation: React.FC = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled 
         ? 'bg-white shadow-md' 
-        : 'bg-gradient-to-br from-emerald-600/90 to-emerald-500/85 '
+        : 'bg-gradient-to-r from-green-700 to-green-600 '
     }`}>
       <div className="max-w-[1400px] mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
@@ -126,4 +122,4 @@ const Navigation: React.FC = () => {
   );
 };
 
-export default Navigation;
+export default Nav;
