@@ -78,7 +78,7 @@ const router = useRouter();
     <div className="min-h-screen bg-white">
       
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-green-700 to-green-600 text-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 pt-32">
+      <div className="bg-gradient-to-br from-emerald-600/90 to-emerald-500/85 text-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 pt-32">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
             Industry Insights &<br />Resources
