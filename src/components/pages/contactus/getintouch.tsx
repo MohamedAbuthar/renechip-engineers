@@ -36,7 +36,7 @@ export default function ContactPage() {
     <Nav/>
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-green-800 to-green-400 text-white px-6 py-16 md:py-20 lg:py-24">
+      <div className="bg-gradient-to-br from-emerald-600/90 to-emerald-500/85 text-white px-6 py-16 md:py-20 lg:py-24">
         <div className="max-w-7xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
             Get In Touch

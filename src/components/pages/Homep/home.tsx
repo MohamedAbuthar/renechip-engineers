@@ -288,7 +288,7 @@ const faqs = [
       </section>
 
       {/* Why Choose ReneChip Section */}
-      <section className="py-12 sm:py-20 bg-emerald-600 text-white">
+      <section className="py-12 sm:py-20 bg-gradient-to-br from-emerald-600/90 to-emerald-500/85 text-white">
         <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4">Why Choose ReneChip</h2>
           <p className="text-center text-white/90 mb-8 sm:mb-12 text-sm sm:text-base">
