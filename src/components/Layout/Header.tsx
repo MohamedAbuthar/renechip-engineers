@@ -33,18 +33,20 @@ const Navigation: React.FC = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-white shadow-md'
-          : 'bg-transparent backdrop-blur-sm-1'
+          : 'bg-transparent backdrop-blur-sm-2'
       }`}
     >
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link
           href="/"
-          className={`text-2xl sm:text-3xl font-bold font-sans tracking-tight transition-colors ${
-            scrolled ? 'text-emerald-500' : 'text-white'
-          }`}
+          className="group"
         >
-          ReneChip
+          <img 
+            src="/renechip_logob.png" 
+            alt="ReneChip Logo" 
+            className="w-12 h-12 sm:w-40 sm:h-15 transition-transform group-hover:scale-105"
+          />
         </Link>
 
         {/* Desktop / Tablet Menu */}

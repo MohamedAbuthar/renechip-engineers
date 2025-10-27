@@ -191,7 +191,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                    <p className="text-gray-600 mb-1">+91 (Available on Request)</p>
+                    <p className="text-gray-600 mb-1">+91 9842160709</p>
                     <p className="text-sm text-gray-500">24/7 for emergency staffing</p>
                   </div>
                 </div>
@@ -203,8 +203,11 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Location</h3>
-                    <p className="text-gray-600 mb-1">Serving manufacturing facilities nationwide</p>
-                    <p className="text-sm text-gray-500">On-site consultations available</p>
+                    <p className="leading-relaxed">
+                  97G/4C/1, 1st Floor, PSS Jayam Towers,<br />
+                  Teachers Colony,<br />
+                  Tuticorin, Tamilnadu, India, 628008
+                </p>
                   </div>
                 </div>
               </div>
