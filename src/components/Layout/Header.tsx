@@ -45,7 +45,7 @@ const Navigation: React.FC = () => {
           <img 
             src="/renechip_logob.png" 
             alt="ReneChip Logo" 
-            className="w-12 h-12 sm:w-40 sm:h-15 transition-transform group-hover:scale-105"
+            className="w-12 h-12 sm:w-50 sm:h-15 transition-transform group-hover:scale-105"
           />
         </Link>
 
