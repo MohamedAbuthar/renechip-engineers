@@ -32,10 +32,15 @@ const Nav: React.FC = () => {
     }`}>
       <div className="max-w-[1400px] mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className={`text-3xl font-bold font-sans tracking-tight transition-colors ${
-          scrolled ? 'text-emerald-500' : 'text-white'
-        }`}>
-          ReneChip
+        <Link
+          href="/"
+          className="group"
+        >
+          <img 
+            src="/renechip_logob.png" 
+            alt="ReneChip Logo" 
+            className="w-20 h-12 sm:w-40 sm:h-15 transition-transform group-hover:scale-105"
+          />
         </Link>
 
         {/* Desktop Menu */}

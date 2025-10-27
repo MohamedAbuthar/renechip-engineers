@@ -61,7 +61,7 @@ const faqs = [
             className="w-full h-full object-cover"
           />
           {/* Green overlay to match the emerald theme */}
-          <div className="absolute inset-0 bg-gradient-to-br from-emerald-600/90 to-emerald-500/85"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-emerald-600/60 to-emerald-500/55"></div>
         </div>
         
         {/* Decorative Elements */}
@@ -312,7 +312,7 @@ const faqs = [
               </div>
               <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Project-Delivery Capability</h3>
               <p className="text-white/90 text-xs sm:text-sm leading-relaxed">
-                Outcome-oriented services like BIM, plant layout, and automation support via a fixed-bid model
+                Outcome-oriented services like  CAD & CAM, BIM, plant layout, and automation support via a fixed-bid model
               </p>
             </div>
 
