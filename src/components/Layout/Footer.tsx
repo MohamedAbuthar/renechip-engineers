@@ -17,7 +17,7 @@ const Footer = () => {
           <img 
             src="/renechip_logo.png" 
             alt="ReneChip Logo" 
-            className="w-12 h-12 sm:w-40 sm:h-15 transition-transform group-hover:scale-105"
+            className="w-12 h-12 sm:w-50 sm:h-15 transition-transform group-hover:scale-105"
           />
         </a>
               <p className="text-base leading-relaxed opacity-95">

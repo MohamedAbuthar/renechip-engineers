@@ -61,7 +61,7 @@ const faqs = [
             className="w-full h-full object-cover"
           />
           {/* Green overlay to match the emerald theme */}
-          <div className="absolute inset-0 bg-gradient-to-br from-emerald-600/60 to-emerald-500/55"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 to-emerald-500/15"></div>
         </div>
         
         {/* Decorative Elements */}
